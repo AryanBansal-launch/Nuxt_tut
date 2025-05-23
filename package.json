@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "start": "nuxt build && nuxt start",
+    "start": " nuxt start",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
