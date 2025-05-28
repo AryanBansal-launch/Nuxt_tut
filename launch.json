@@ -6,7 +6,7 @@
         "statusCode": 308
       },
       {
-        "source":"/about",
+        "source":"/projects",
         "destination":"/contact",
         "statusCode":307
       }
