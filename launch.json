@@ -4,6 +4,11 @@
         "source": "/test3",
         "destination": "/contact",             
         "statusCode": 308
+      },
+      {
+        "source":"/about",
+        "destination":"/contact",
+        "statusCode":307
       }
 ],
 "rewrites": [
