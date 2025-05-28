@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     // Prevent caching of your HTML pages (for SSR)
     '/**': {
       headers: {
-        'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=60'
+        'Cache-Control': 's-maxage=300, stale-while-revalidate=60'
       }
     }
   }
