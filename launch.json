@@ -9,11 +9,6 @@
         "source":"/projects",
         "destination":"/about",
         "statusCode":307
-      },
-      {
-        "source":"/contact",
-        "destination":"/about",
-        "statusCode":307
       }
 ],
 "rewrites": [
