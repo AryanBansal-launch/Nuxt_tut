@@ -33,11 +33,11 @@ export default defineNuxtConfig({
       }
     }
   },
-  experimental: {
-    defaults: {
-      nuxtLink: {
-        prefetch: false,
-      },
-    },
-  },
+  // experimental: {
+  //   defaults: {
+  //     nuxtLink: {
+  //       prefetch: false,
+  //     },
+  //   },
+  // },
 })
