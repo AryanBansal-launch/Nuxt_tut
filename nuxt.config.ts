@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   // }
   routeRules: {
     // Fully Static (SSG): prerendered at build time
-    '/about': { static: true },
+    '/about': { prerender: true },
 
     // SSR: dynamic content rendered on each request
     '/contact': { ssr: true },
