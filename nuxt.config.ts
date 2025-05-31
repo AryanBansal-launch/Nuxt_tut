@@ -13,31 +13,42 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui'
   ],
+  // routeRules: {
+  //   // Cache static assets for 1 year
+  //   '/_nuxt/**': {
+  //     headers: {
+  //       'Cache-Control': 'public, max-age=31536000, immutable'
+  //     }
+  //   },
+  //   // Cache your API routes for 5 minutes
+  //   '/api/**': {
+  //     headers: {
+  //       'Cache-Control': 'public, max-age=300'
+  //     }
+  //   },
+  //   // Prevent caching of your HTML pages (for SSR)
+  //   '/**': {
+  //     headers: {
+  //       'Cache-Control': 's-maxage=300, stale-while-revalidate=60'
+  //     }
+  //   }
+  // }
   routeRules: {
-    // Cache static assets for 1 year
-    '/_nuxt/**': {
-      headers: {
-        'Cache-Control': 'public, max-age=31536000, immutable'
-      }
-    },
-    // Cache your API routes for 5 minutes
-    '/api/**': {
-      headers: {
-        'Cache-Control': 'public, max-age=300'
-      }
-    },
-    // Prevent caching of your HTML pages (for SSR)
-    '/**': {
+    // Fully Static (SSG): prerendered at build time
+    '/about': { static: true },
+
+    // SSR: dynamic content rendered on each request
+    '/contact': { ssr: true },
+
+    // ISR: regenerates the page in background every 300s
+    '/blog/**': {
+      swr: true,                    // Enables stale-while-revalidate (ISR)
       headers: {
         'Cache-Control': 's-maxage=300, stale-while-revalidate=60'
       }
-    }
-  },
-  // experimental: {
-  //   defaults: {
-  //     nuxtLink: {
-  //       prefetch: false,
-  //     },
-  //   },
-  // },
+    },
+
+    // Default fallback: SSR or as defined in `ssr: true/false`
+    '/**': { ssr: true }
+  }
 })

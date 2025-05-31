@@ -8,4 +8,4 @@ export default function handler(request, context) {
       return new Response(JSON.stringify(response))
     }
     return fetch(request)
-}
+} 
