@@ -12,7 +12,9 @@ definePageMeta({
 
 // Fetch random user data at build time
 console.log('line 14......');
-const { data: user, error } = await useFetch('https://randomuser.me/api/');
+const { data: user, error } = await useFetch('https://randomuser.me/api/',{
+  cache: "no-store"
+});
 console.log("Error:",error);
 console.log('line 15......');
 </script>
