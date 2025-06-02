@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
-  ssr: true, // Enable SSR in general
+  ssr: true, 
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
@@ -15,13 +15,22 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      crawlLinks: false, 
-      routes: ['/about'],
+      crawlLinks: false,
+      routes: ["/about"],
     },
   },
   routeRules: {
-    '/blog/**': { isr: 60,headers: {
-      'Cache-Control': 'public, max-age=0, s-maxage=60, stale-while-revalidate=30'
-    } } 
-  }
+    "/blog/**": {
+      isr: 60,
+      headers: {
+        "Cache-Control":
+          "public, max-age=0, s-maxage=60, stale-while-revalidate=30",
+      },
+    },
+    "/contact":{
+      headers:{
+        "Cache-Control":"no-store"
+      }
+    }
+  },
 });
