@@ -15,7 +15,7 @@ console.log('line 14......');
 const { data: user, error } = await useFetch('https://randomuser.me/api/',{
   cache: "no-store"
 });
-console.log("Error:",error);
+console.log("Error:",error.value);
 console.log('line 15......');
 </script>
 
