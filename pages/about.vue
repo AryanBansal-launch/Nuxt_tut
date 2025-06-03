@@ -17,7 +17,9 @@ try {
   cache: "no-store"
 }
 ); 
+console.log("inside try block and nothing broke!");
 } catch (error) {
+  console.log('Error fetching user data');
   console.log(error);
 }
 console.log('line 15......');
