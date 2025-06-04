@@ -11,18 +11,21 @@ definePageMeta({
 })
 
 // Fetch random user data at build time
-console.log('line 14......');
-try {
-  const { data: user, error } = await useFetch('https://randomuser.me/api/',{
+// console.log('line 14......');
+// try {
+//   const { data: user, error } = await useFetch('https://randomuser.me/api/',{
+//   cache: "no-store"
+// }
+// ); 
+// console.log("inside try block and nothing broke!");
+// } catch (error) {
+//   console.log('Error fetching user data');
+//   console.log(error);
+// }
+// console.log('line 15......');
+const { data: user, error } = await useFetch('https://randomuser.me/api/',{
   cache: "no-store"
-}
-); 
-console.log("inside try block and nothing broke!");
-} catch (error) {
-  console.log('Error fetching user data');
-  console.log(error);
-}
-console.log('line 15......');
+});
 </script>
 
 <template>
