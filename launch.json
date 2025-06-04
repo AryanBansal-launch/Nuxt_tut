@@ -21,14 +21,7 @@
       "source": "/incorrect2",
       "destination": "/contact"
     }
-  ],
-    "cache": {
-    "cachePriming": {
-      "urls": [
-          "/about"
-      ]
-    }
-  }
+  ]
 }
 
 
