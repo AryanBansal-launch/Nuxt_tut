@@ -33,6 +33,6 @@
 useHead({ title: 'Contact | My Portfolio' })
 
 // const randomnumber = Math.floor(Math.random() * 200) + 1
-
+console.log("line 36...");
 const user = await useFetch('https://randomuser.me/api/')
 </script>
