@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section>
     <h1>Contact</h1>
     <p>
@@ -35,4 +35,33 @@ useHead({ title: 'Contact | My Portfolio' })
 // const randomnumber = Math.floor(Math.random() * 200) + 1
 
 const user = await useFetch('https://randomuser.me/api/')
+</script> -->
+
+<script setup>
+useHead({ title: 'Contact | My Portfolio' })
+
+const response = await useFetch('https://nextjs-ssr-isr-demo-wce75vr67bt8.devcontentstackapps.com/api/hello', {
+  cache: 'no-store'
+})
 </script>
+
+
+<template>
+  <section>
+    <h1>Contact</h1>
+    <p>
+      You can reach me via email at
+      <a href="mailto:me@example.com">me@example.com</a>.
+    </p>
+
+    <div v-if="response.data.value && response.data.value.randomNum !== undefined">
+      <h2>Random Number</h2>
+      <p><strong>randomNum:</strong> {{ response.data.value.randomNum }}</p>
+    </div>
+
+    <div v-else>
+      <p>Loading or error...</p>
+    </div>
+  </section>
+</template>
+

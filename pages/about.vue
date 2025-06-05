@@ -1,4 +1,4 @@
-
+<!-- 
 <script setup>
 // Set page title
 useHead({
@@ -51,6 +51,43 @@ const { data: user, error } = await useFetch('https://randomuser.me/api/',{
         width="100"
         height="100"
       />
+    </div>
+
+    <div v-else-if="error">
+      <p>Error fetching data.</p>
+    </div>
+
+    <div v-else>
+      <p>Loading...</p>
+    </div>
+  </section>
+</template> -->
+
+<script setup>
+useHead({
+  title: 'About | My Portfolio'
+})
+
+definePageMeta({
+  prerender: true
+})
+
+const { data: response, error } = await useFetch('https://nextjs-ssr-isr-demo-wce75vr67bt8.devcontentstackapps.com/api/hello', {
+  cache: 'no-store'
+})
+</script>
+
+<template>
+  <section>
+    <h1>About Me</h1>
+    <p>
+      I’m a web developer passionate about building clean and functional websites.
+      This portfolio is built with Nuxt.js!
+    </p>
+
+    <div v-if="response && response.randomNum !== undefined">
+      <h2>Random Number</h2>
+      <p><strong>randomNum:</strong> {{ response.randomNum }}</p>
     </div>
 
     <div v-else-if="error">
