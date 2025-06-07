@@ -1,20 +1,27 @@
 {
-    "redirects": [
-      {
-        "source": "/test3",
-        "destination": "/contact",             
-        "statusCode": 308
-      },
-      {
-        "source":"/_nuxt/(.*)",
-        "destination":"/about",
-        "statusCode":307
-      }
+  "redirects": [
+    {
+      "source": "/test3",
+      "destination": "/contact",             
+      "statusCode": 308
+    },
+    {
+      "source":"/_nuxt/(.*)",
+      "destination":"/about",
+      "statusCode":307
+    }
 ],
 "rewrites": [
-    {
-      "source": "/incorrect2",
-      "destination": "/contact"
-    }
-  ]
+  {
+    "source": "/incorrect2",
+    "destination": "/contact"
+  }
+],
+"cache": {
+  "cachePriming": {
+    "urls": [
+        "/about"
+    ]
+  }
+}
 }
