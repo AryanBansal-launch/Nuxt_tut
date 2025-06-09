@@ -40,9 +40,10 @@ const user = await useFetch('https://randomuser.me/api/')
 <script setup>
 useHead({ title: 'Contact | My Portfolio' })
 
-const response = await useFetch('https://nextjs-ssr-isr-demo-wce75vr67bt8.devcontentstackapps.com/api/hello', {
-  cache: 'no-store'
-})
+// const response = await useFetch('https://nextjs-ssr-isr-demo-wce75vr67bt8.devcontentstackapps.com/api/hello', {
+//   cache: 'no-store'
+// })
+const response = await useFetch('https://nextjs-ssr-isr-demo-wce75vr67bt8.devcontentstackapps.com/api/hello')
 </script>
 
 
