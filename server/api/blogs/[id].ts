@@ -2,7 +2,7 @@
 export default defineEventHandler(async (event) => {
   const id = event.context.params?.id
 
-  setHeader(event, 'Cache-Control', 's-maxage=300, stale-while-revalidate=600') // CDN cache
+  setHeader(event, 'Cache-Control', 'no-store') // CDN cache
   return {
     id,
     title: `Blog Post ${id}`,
