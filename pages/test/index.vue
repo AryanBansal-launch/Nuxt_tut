@@ -1,7 +1,7 @@
 <!-- pages/blogs.vue -->
 <template>
   <div>
-    <h1>All Blogs</h1>
+    <h1>All Blogs Test dynamic ISR</h1>
     <ul>
       <li v-for="blog in blogs" :key="blog.id">
         <NuxtLink :to="`/test/${blog.id}`">{{ blog.title }}</NuxtLink>

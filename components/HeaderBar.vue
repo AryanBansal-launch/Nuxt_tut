@@ -7,8 +7,8 @@
           <NuxtLink to="/about" exact-active-class="active">About</NuxtLink>
           <NuxtLink to="/projects" exact-active-class="active">Projects</NuxtLink>
           <NuxtLink to="/contact" exact-active-class="active">Contact</NuxtLink>
-          <NuxtLink to="/blog/1" exact-active-class="active">Blog 1</NuxtLink>
-          <NuxtLink to="/test" exact-active-class="active">Test</NuxtLink>
+          <NuxtLink to="/blog/1" exact-active-class="active">Blog_static_ISR</NuxtLink>
+          <NuxtLink to="/test" exact-active-class="active">Test_Dynamic_ISR</NuxtLink>
         </nav>
       </div>
     </header>

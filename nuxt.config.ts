@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    "/blog/**": {
+    "/blog": {
       isr: 60,
       headers: {
         "Cache-Control":
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     },
     "/test/**":{
       headers:{
-        "Cache-Control":"max-age=0, s-maxage=86400, stale-while-revalidate"
+        "Cache-Control":"public, max-age=0, s-maxage=60, stale-while-revalidate=30"
       } 
     }
   }
