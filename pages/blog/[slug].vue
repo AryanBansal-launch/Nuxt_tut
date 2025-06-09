@@ -17,12 +17,16 @@
   
   const route = useRoute()
   
-  const { data: user, error } = await useAsyncData(`random-user-${route.params.slug}`, () =>
-    $fetch('https://randomuser.me/api/').then(res => {
-      // Add timestamp to check revalidation
-      res.results[0].fetchedAt = new Date().toISOString()
-      return res.results[0]
-    })
-  )
+  const key = `random-user-${route.params.slug}`
+
+const fetchUser = async () => {
+  const res = await $fetch('https://randomuser.me/api/')
+  const user = res.results[0]
+  user.fetchedAt = new Date().toISOString()
+  return user
+}
+
+const { data: user, error } = await useAsyncData(key, fetchUser)
+
   </script>
   
