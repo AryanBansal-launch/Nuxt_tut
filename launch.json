@@ -4,11 +4,6 @@
       "source": "/test3",
       "destination": "/contact",             
       "statusCode": 308
-    },
-    {
-      "source":"/_nuxt/(.*)",
-      "destination":"/about",
-      "statusCode":307
     }
 ],
 "rewrites": [
