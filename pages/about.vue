@@ -67,7 +67,7 @@ const { data: user, error } = await useFetch('https://randomuser.me/api/',{
 useHead({
   title: 'About | My Portfolio'
 })
-
+const { locales, setLocale } = useI18n()
 definePageMeta({
   prerender: true
 })
@@ -79,6 +79,10 @@ const { data: response, error } = await useFetch('https://nextjs-ssr-isr-demo-wc
 
 <template>
   <section>
+    <button v-for="locale in locales" @click="setLocale(locale.code)">
+      {{ locale.name }}
+    </button>
+    <h1>{{ $t('welcome') }}</h1>
     <h1>About Me</h1>
     <p>
       I’m a web developer passionate about building clean and functional websites.
