@@ -1,6 +1,7 @@
 <template>
     <div class="card">
-      <img :src="image" :alt="title" class="card-image" />
+      <!-- <img :src="image" :alt="title" class="card-image" /> -->
+      <NuxtImg :src="image" :alt="title" class="card-image" />
       <div class="card-content">
         <h3 class="card-title">{{ title }}</h3>
         <p class="card-description">{{ description }}</p>

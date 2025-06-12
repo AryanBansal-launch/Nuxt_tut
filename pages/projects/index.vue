@@ -3,7 +3,7 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
       <ProjectCard v-for="(project, index) in projects" :key="index" :title="project.title"
-        :description="project.description" :image="proimg"
+        :description="project.description" :image="imgurl"
         :link="'/projects/' + project.title.toLowerCase().replace(/\s+/g, '-')" />
     </div>
   </section>
@@ -12,6 +12,7 @@
 <script setup>
 import ProjectCard from '~/components/ProjectCard.vue'
 import proimg from '~/public/image.png'
+const imgurl= 'https://images.contentstack.io/v3/assets/blteae40eb499811073/bltc5064f36b5855343/59e0c41ac0eddd140d5a8e3e/owl.jpg?width=100.'
 
 //using useFetch to call the API endpoint
 const { data: projects } = await useFetch('/api/projects')
