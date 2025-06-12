@@ -40,6 +40,11 @@ const user = await useFetch('https://randomuser.me/api/')
 <script setup>
 useHead({ title: 'Contact | My Portfolio' })
 
+// Apply the logging middleware to this page
+definePageMeta({
+  middleware: 'auth'
+})
+
 // const response = await useFetch('https://nextjs-ssr-isr-demo-wce75vr67bt8.devcontentstackapps.com/api/hello', {
 //   cache: 'no-store'
 // })

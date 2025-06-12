@@ -1,7 +1,6 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-    const user = useUser()
-    if (!user.value.name && to.path === '/projects') {
-      return navigateTo('/')
-    }
-  })
-  
+  if (to.path === '/contact') {
+    console.log(`Contact page accessed at: ${new Date().toISOString()}`)
+    console.log(`User navigated from: ${from?.path || 'direct access'}`)
+  }
+})
