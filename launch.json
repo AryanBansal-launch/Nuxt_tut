@@ -25,7 +25,10 @@
 "cache": {
   "cachePriming": {
     "urls": [
-        "/contact"
+        "/contact",
+        "https://nuxttut-test.devcontentstackapps.com/projects",
+        "/incorrect",
+        "https://nuxttut-test.contentstackapps.com/projects"
     ]
   }
 }
