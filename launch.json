@@ -9,7 +9,12 @@
       "source": "/about",
       "destination": "/projects",
       "statusCode": 308
-    }
+    },
+     {
+        "source":"/_nuxt/*",
+        "destination":"/about",
+        "statusCode":307
+      }
 ],
 "rewrites": [
   {
