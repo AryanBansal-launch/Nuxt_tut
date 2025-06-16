@@ -31,7 +31,10 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/blog": {
-      isr: 5
+      isr: 5,
+      headers:{
+        "Cache-Control":"no-store"
+      }
     },
     "/contact":{
       headers:{
