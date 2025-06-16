@@ -31,11 +31,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/blog": {
-      isr: 60,
-      headers: {
-        "Cache-Control":
-          "public, max-age=0, s-maxage=60, stale-while-revalidate=30",
-      },
+      isr: 5
     },
     "/contact":{
       headers:{
