@@ -3,15 +3,15 @@
       <div class="nav-container">
         <h1 class="logo">My Portfolio</h1>
         <nav>
-          <NuxtLink to="/" exact-active-class="active">Home</NuxtLink>
-          <NuxtLink to="/about" exact-active-class="active">About</NuxtLink>
-          <NuxtLink to="/projects" exact-active-class="active">Projects</NuxtLink>
-          <NuxtLink to="/contact" exact-active-class="active">Contact</NuxtLink>
-          <NuxtLink to="/blog" exact-active-class="active">Blog_static_ISR</NuxtLink>
-          <NuxtLink to="/test" exact-active-class="active">Test_Dynamic_ISR</NuxtLink>
-          <NuxtLink to="/test1" exact-active-class="active">Test1</NuxtLink>
+          <NuxtLink to="/" exact-active-class="active" :prefetch="false">Home</NuxtLink>
+          <NuxtLink to="/about" exact-active-class="active" :prefetch="false">About</NuxtLink>
+          <NuxtLink to="/projects" exact-active-class="active" :prefetch="false">Projects</NuxtLink>
+          <NuxtLink to="/contact" exact-active-class="active" :prefetch="false">Contact</NuxtLink>
+          <NuxtLink to="/blog" exact-active-class="active" :prefetch="false">Blog_static_ISR</NuxtLink>
+          <NuxtLink to="/test" exact-active-class="active" :prefetch="false">Test_Dynamic_ISR</NuxtLink>
+          <NuxtLink to="/test1" exact-active-class="active" :prefetch="false">Test1</NuxtLink>
            <!-- <a href="/test1">Test1</a> -->
-          <NuxtLink to="/test2" exact-active-class="active">Test2</NuxtLink>
+          <NuxtLink to="/test2" exact-active-class="active" :prefetch="false">Test2</NuxtLink>
         </nav>
       </div>
     </header>
