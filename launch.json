@@ -4,6 +4,11 @@
       "source": "/test3",
       "destination": "/contact",             
       "statusCode": 308
+    },
+    {
+      "source": "/test1",
+      "destination": "/test2",             
+      "statusCode": 308
     }
 ],
 "rewrites": [
