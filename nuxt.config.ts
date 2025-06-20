@@ -46,5 +46,12 @@ export default defineNuxtConfig({
         "Cache-Control":"public, max-age=0, s-maxage=60, stale-while-revalidate=30"
       } 
     }
-  }
+  },
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        prefetch: false,
+      },
+    },
+  },
 });

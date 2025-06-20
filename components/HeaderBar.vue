@@ -9,8 +9,8 @@
           <NuxtLink to="/contact" exact-active-class="active">Contact</NuxtLink>
           <NuxtLink to="/blog" exact-active-class="active">Blog_static_ISR</NuxtLink>
           <NuxtLink to="/test" exact-active-class="active">Test_Dynamic_ISR</NuxtLink>
-          <!-- <NuxtLink to="/test1" exact-active-class="active">Test1</NuxtLink> -->
-           <a href="/test1">Test1</a>
+          <NuxtLink to="/test1" exact-active-class="active">Test1</NuxtLink>
+           <!-- <a href="/test1">Test1</a> -->
           <NuxtLink to="/test2" exact-active-class="active">Test2</NuxtLink>
         </nav>
       </div>
