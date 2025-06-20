@@ -4,17 +4,16 @@
       "source": "/test3",
       "destination": "/contact",             
       "statusCode": 308
-    },
-    {
-      "source": "/test1",
-      "destination": "/test2",             
-      "statusCode": 308
     }
 ],
 "rewrites": [
   {
     "source": "/incorrect2",
     "destination": "/contact"
+  },
+  {
+    "source": "/test1",
+    "destination": "/test2"
   }
 ],
 "cache": {
