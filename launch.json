@@ -5,16 +5,6 @@
       "destination": "/contact",             
       "statusCode": 308
     }
-    // {
-    //   "source": "/about(.*)",
-    //   "destination": "/projects",
-    //   "statusCode": 308
-    // },
-    // {
-    //   "source": "/contact",
-    //   "destination": "/projects",
-    //   "statusCode": 308
-    // }
 ],
 "rewrites": [
   {
