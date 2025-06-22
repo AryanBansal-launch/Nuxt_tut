@@ -6,6 +6,7 @@
   </template>
   
   <script setup>
-  const time = new Date().toLocaleTimeString()
+  const { data } = await useFetch('/api/data')
+  const time = data.value.timestamp
   </script>
   
