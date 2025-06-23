@@ -46,8 +46,9 @@ export default defineNuxtConfig({
         "Cache-Control":"public, max-age=0, s-maxage=60, stale-while-revalidate=30"
       } 
     },
-    "/isr-demo": { isr: 30 },  // Rebuilds once every 10 seconds
-    "/swr-demo": { swr: 30 }, // Revalidates every 10 seconds on every request
+    "/isr-demo": { isr: 30 },  
+    "/swr-demo": { swr: 30 }, 
+    "/test1" :{redirect: "/test2"}
   },
   experimental: {
     defaults: {

@@ -1,11 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/test1",
-      "destination": "/test2",             
-      "statusCode": 308
-    },
-    {
       "source": "/test3",
       "destination": "/test4",             
       "statusCode": 308
