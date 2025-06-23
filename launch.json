@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/test3",
-      "destination": "/test4",             
+      "source": "/test1",
+      "destination": "/test2",             
       "statusCode": 308
     }
 ],
@@ -10,7 +10,12 @@
   {
     "source": "/incorrect2",
     "destination": "/contact"
+  },
+  {
+    "source": "/test3",
+    "destination": "/test4"
   }
+
 ],
 "cache": {
   "cachePriming": {
