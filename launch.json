@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/sample",
+      "source": "/test1",
       "destination": "/test2",             
       "statusCode": 308
     }

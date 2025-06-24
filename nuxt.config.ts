@@ -48,8 +48,8 @@ export default defineNuxtConfig({
     },
     "/isr-demo": { isr: 30 },  
     "/swr-demo": { swr: 30 }, 
-    // "/test1" :{redirect: "/test2"}
-    "/test1":{proxy: "https://nuxttut-test.devcontentstackapps.com/test2"}
+    "/test1" :{redirect: "/test2"}
+    // "/test1":{proxy: "https://nuxttut-test.devcontentstackapps.com/test2"}
   },
   experimental: {
     defaults: {

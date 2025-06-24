@@ -10,7 +10,6 @@
           <NuxtLink to="/blog" exact-active-class="active" :prefetch="false">Blog_static_ISR</NuxtLink>
           <NuxtLink to="/test" exact-active-class="active" :prefetch="false">Test_Dynamic_ISR</NuxtLink>
           <NuxtLink to="/test1" exact-active-class="active" :prefetch="false">Test1</NuxtLink>
-           <!-- <a href="/test1">Test1</a> -->
           <NuxtLink to="/test2" exact-active-class="active" :prefetch="false">Test2</NuxtLink>
           <a href="/test3">Test3</a>
           <a href="/test4">Test4</a>
