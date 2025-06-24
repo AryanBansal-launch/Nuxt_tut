@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/sample",
-      "destination": "/test2",             
+      "source": "/test1",
+      "destination": "/test3",             
       "statusCode": 308
     }
 ],
@@ -10,10 +10,6 @@
   {
     "source": "/incorrect2",
     "destination": "/contact"
-  },
-  {
-    "source": "/test3",
-    "destination": "/test4"
   }
 
 ],
