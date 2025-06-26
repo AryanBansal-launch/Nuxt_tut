@@ -6,6 +6,6 @@
   </template>
    <script setup>
    const { data } = await useFetch('/hello')
-   const val = data.value;
+   const val = data.value.timestamp;
    </script>
   

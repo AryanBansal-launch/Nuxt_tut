@@ -1,1 +1,6 @@
-export default defineEventHandler(() => 'Hello World!')
+export default defineEventHandler(() => {
+    return {
+      timestamp: new Date().toISOString(),
+    }
+  })
+  
