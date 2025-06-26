@@ -30,6 +30,12 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
+    "/test4":{
+      ssr:true,
+      headers:{
+        "Cache-Control":"no-store"
+      }
+    },
     "/blog": {
       isr: 60,
       headers:{
