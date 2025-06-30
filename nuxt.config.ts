@@ -56,11 +56,11 @@ export default defineNuxtConfig({
     "/swr-demo": { swr: 30 }, 
     "/test1" :{redirect: "/test2"},
     // "/test1":{proxy: "https://nuxttut-test.devcontentstackapps.com/test2"}
-    "/hello":{
-      headers:{
-        "Cache-Control":"no-store"
-      }
-    }
+    // "/hello":{
+    //   headers:{
+    //     "Cache-Control":"no-store"
+    //   }
+    // }
   },
   experimental: {
     defaults: {
@@ -74,3 +74,6 @@ export default defineNuxtConfig({
     },
   },
 });
+
+
+ 

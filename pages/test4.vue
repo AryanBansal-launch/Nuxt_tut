@@ -6,7 +6,11 @@
     </div>
   </template>
    <script setup>
-   const { data } = await useFetch('/hello')
+   const { data } = await useFetch('/hello',{
+    options:{
+      cache: 'no-store'
+    }
+   })
    const { data: data2 } = await useFetch('/api/data')
    const val = data.value.timestamp;
    const val2 = data2.value.timestamp;
