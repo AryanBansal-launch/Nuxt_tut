@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
-  ssr:true,
+  ssr:false,
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
@@ -31,10 +31,10 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/test4":{
-      ssr:true,
-      headers:{
-        "Cache-Control":"no-store"
-      }
+      ssr:false,
+      // headers:{
+      //   "Cache-Control":"no-store"
+      // }
     },
     "/blog": {
       isr: 60,
