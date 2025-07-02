@@ -1,4 +1,5 @@
 export default function handler(request, response) {
+    console.log('users API called')
     const users = [
       {name: "Jack", age: "25"},
       {name: "Rick", age: "28"},
