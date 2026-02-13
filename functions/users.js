@@ -1,9 +1,10 @@
 export default function handler(request, response) {
-    console.log('users API called')
-    const users = [
-      {name: "Jack", age: "25"},
-      {name: "Rick", age: "28"},
-      {name: "Jane", age: "34"},
-    ];
-    response.status(200).send(users);
-  }
+  const country = request.headers['visitor-ip-country'];
+  const region = request.headers['visitor-ip-region'];
+  const city = request.headers['visitor-ip-city'];
+
+  response.status(200).json({
+    location: `${city}, ${region}, ${country}`,
+    method: request.method,
+  });
+}
